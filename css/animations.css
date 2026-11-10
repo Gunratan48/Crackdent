@@ -1,0 +1,7 @@
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-15px)}}
+@keyframes pulse-glow{0%,100%{box-shadow:0 0 15px rgba(57,139,255,.15)}50%{box-shadow:0 0 40px rgba(57,139,255,.35)}}
+.float-animation{animation:float 5s ease-in-out infinite}
+.glow-animation{animation:pulse-glow 3s ease-in-out infinite}
+.reveal{opacity:0;transform:translateY(35px);transition:opacity .8s ease,transform .8s ease}
+.reveal.active{opacity:1;transform:translateY(0)}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
